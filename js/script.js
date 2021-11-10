@@ -38,4 +38,22 @@ for(let i=0; i < whiteList.length ; i++){
 }
 
 
+// generare un numero random da 1 a 6
+
+
+let dadoUser = Math.floor(Math.random() * 6) + 1;
+console.log(dadoUser);
+
+let dadoComp = Math.floor(Math.random() * 6) + 1;
+console.log(dadoComp);
+
+if(dadoUser == dadoComp){
+    console.log('tira ancora i dadi.');
+}else if(dadoUser > dadoComp){
+    console.log('user hai vinto.');
+}else{
+    console.log('user hai perso.');
+}
+
+
 
